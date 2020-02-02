@@ -1,0 +1,293 @@
+<!DOCTYPE HTML>
+<html class="no-js" lang="zh-CN">
+<head>
+    <!--[if lte IE 9]>
+<meta http-equiv="refresh" content="0;url=http://www.bingxinwu.com/warn.html">
+<![endif]-->
+<meta charset="utf-8">
+<meta http-equiv="X-DNS-Prefetch-Control" content="on">
+<link rel="dns-prefetch" href="http://www.bingxinwu.com">
+<link rel="dns-prefetch" href="//www.google-analytics.com">
+<link rel="prefetch" href="http://www.bingxinwu.com">
+<link rel="prefetch" href="//www.google-analytics.com">
+
+
+<link rel="prerender" href="http://www.bingxinwu.com">
+
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+<meta http-equiv="mobile-agent" content="format=html5; url=http://www.bingxinwu.com">
+<meta name="author" content="Bingxin">
+<link rel="stylesheet" href="/css/JSimple.css">
+
+<link rel="shortcut icon" href="/images/favicon1.png">
+
+
+<title>建站复盘1/ubuntu+wordpress建站踩坑记录 - Bing</title>
+
+<meta name="keywords" content="">
+
+<meta name="description " content="Bing的个人站点">
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                processEscapes: true
+            }
+        });
+    </script>
+
+
+    
+
+    
+
+</head>
+<body>
+<div id="nav">
+    <nav class="nav-menu">
+        <a class="site-name current" href="/" title="阿冰">阿冰</a>
+        <a class="site-index current" href="/"><i class="fa fa-home"></i><span>Home</span></a>
+        <a href="/archives" title="Archives"><i class="fa fa-archives"></i><span>Archives</span></a>
+        <a href="/tags" title="Tags"><i class="fa fa-tags"></i><span>Tags</span></a>
+        <!-- custom single page of menus -->
+        
+        
+        <a href="/page" title="导航栏">
+            <i class="fa "></i>
+            <span>导航栏</span>
+        </a>
+        
+    </nav>
+</div>
+
+<div class="nav-user">
+    <a class="btn-search" href="#"><i class="fa fa-search"></i></a>
+    <a class="btn-read-mode" href="#"><i class="fa fa-sun-o"></i></a>
+    <a class="btn-sns-qr" href="javascript:" target="_blank" rel="noopener"><i class="fa fa-telegram"></i></a>
+</div>
+
+<div id="wrapper" class="clearfix">
+    <div id="body">
+        <div class="main" id="main">
+            <div id="cover">
+    <div class="cover-img"></div>
+    <div class="cover-info">
+        
+        <h1 class="cover-siteName">阿冰的个人站点</h1>
+        <h3 class="cover-siteTitle">Here is Bing.</h3>
+        <p class="cover-siteDesc">There&#39;s no guideline. Never.</p>
+        <div class="cover-sns">
+            
+    &nbsp;&nbsp;<div class="btn btn-github">
+        <a href="https://github.com/Bingxin2779" target="_blank" title="github" ref="friend">
+            <i class="fa fa-github"></i>
+        </a>
+    </div>
+
+
+        </div>
+    </div>
+</div>
+
+            <div class="page-title">
+    <ul>
+        <li><a href="/">Recent Posts</a></li>
+        
+            
+                <li class="">
+                    <a href="/categories/AboutMe" data-name="关于我">关于我</a>
+                </li>
+            
+                <li class="active">
+                    <a href="/categories/tech-notes" data-name="技术踩坑经验">技术踩坑经验</a>
+                </li>
+            
+                <li class="">
+                    <a href="/categories/translations" data-name="翻译作品存档">翻译作品存档</a>
+                </li>
+            
+                <li class="">
+                    <a href="/categories/others" data-name="书、剧及杂七杂八">书、剧及杂七杂八</a>
+                </li>
+            
+        
+        <li class="page-search">
+    <form id="search" class="search-form">
+        <input type="text"
+               readonly="readonly"
+               id="local-search-input-tip"
+               placeholder="click to search..." />
+        <button type="button" disabled="disabled" class="search-form-submit"><i class="fa fa-search"></i></button>
+    </form>
+</li>
+
+    </ul>
+</div>
+<div class="main-inner">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+        <div class="post-header">
+            <div class="post-author clearfix">
+                <a class="avatar fleft" href="http://www.bingxinwu.com"
+                   target="_blank">
+                    <img width="48" src="/images/favicon1.png" alt="avatar"/>
+                </a>
+                <p><span class="label">Author</span>
+                    <a href="http://www.bingxinwu.com"
+                       target="_blank">Bingxin</a>
+                    <span title="Last edited at&nbsp;2019-10-03">2019-10-03</span>
+                </p>
+                <p>CAT学徒泥瓦工</p>
+            </div>
+            <h2 class="post-title">建站复盘1/Ubuntu+WordPress建站踩坑记录</h2>
+            <div class="post-meta">
+                emm... 1720 words in the article |
+                you are the&nbsp;<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>th friend who reading now
+            </div>
+        </div>
+        <div class="post-content markdown-body">
+            <p>建一个个人网站，恢复一下写作的习惯，是我这次国庆假期很重要的一个愿望。建站的过程不算顺利，出了不少奇奇怪怪的问题，好在我没撒手不干了，好歹算是托出来一个大概的成品。技术类的第一篇文章，就先记录一下建站的大体过程，以及遇到的问题，希望以后再有类似的活儿时候，能避开之前踩过的坑。</p>
+<p>要建站，方式其实有很多，除了我用的WordPress，还可以选择WIX、Squarespace等平台。我这里不打算写详细的教程，诸位如果有兴趣可以通过谷歌百度找到十分详细的各平台优劣对比及操作攻略。这里我只记录一下我的选择思路，仅供参考。</p>
+<p>看过很多教程之后，我选择了相对大众和稳妥的路子，那就是买域名+租虚拟主机+WordPress。最开始参考的是北京语言大学韩林涛老师的教程“译者如何拥有一个属于自己的个人网站”，但考虑到国外的服务器和域名在国内访问可能会不稳定，所以我没有跟随韩老师“衡天主机+GoDaddy”的方式，转而寻找国内的服务商。国内腾讯云、百度云、阿里云等都是很方便的平台，首次注册和购买也有不少优惠，我选择的是之前自己已经完成实名注册的腾讯云，服务器选的是舍友推荐的Ubuntu，域名用的自己的名字全拼，最终一年期的服务器和域名总共花了143元。</p>
+<h4 id="第一坑"><a href="#第一坑" class="headerlink" title="第一坑"></a>第一坑</h4><p>国内的域名和服务器虽然好用，但是需要实名认证和网站备案，手续繁多。我本来没有太在意这个问题，顺着要求一步步走，但是域名实名认证连续三次判定不合格，最终查阅技术文档才知道应该是户口正在迁移的原因，身份信息不能正常调用。最终域名暂时挂在了朋友名下，但是网站备案还是没有完成，所以这篇文章发出来的时候，还有一些朋友不能正常访问我的小黑站，只能等哪天学校办好我的户口，网站才能正常访问。还有一点需要注意：实名认证前几次失败的时候，我还铁着头原路尝试，最后当然统统失败了。如果早些去看帮助文档，也不至于浪费这么多时间。</p>
+<p>在腾讯云配置好服务器和域名之后，我注意到腾讯云提供了开发者实验室，其中就有“基于Ubuntu搭建WordPress博客”的实验课程，在这里面，可以跟随指南用自己买好的主机实验。实验指南非常非常“傻瓜”，我完全没有弄懂其中的原理，就完成了大致的流程……</p>
+<p><img src="http://bingxinwu.com/wp-content/uploads/2019/10/FireShot-Capture-021-%E5%9F%BA%E4%BA%8E-Ubuntu-%E6%90%AD%E5%BB%BA-WordPress-%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-%E8%85%BE%E8%AE%AF%E4%BA%91%E5%AE%9E%E9%AA%8C%E5%AE%A4-cloud.tencent.com_-1024x503.png" alt=""></p>
+<h4 id="第二坑"><a href="#第二坑" class="headerlink" title="第二坑"></a>第二坑</h4><p>实验过程基本顺利，只在数据库部分出了一个问题。为WordPress配置数据库的时候，我怎么输密码都提示错误，从开头重新操作，重新设置密码也不行，最后是到网上搜索了重置MySQL数据库密码的教程，直接重置了。这里我现在也还不是很理解出错的原因。</p>
+<p>完成这个实验，WordPress博客就在自己的服务器上部署好了，后面需要做的就是到WordPress操作台上优化布局、填充内容了。</p>
+<h4 id="第三坑"><a href="#第三坑" class="headerlink" title="第三坑"></a>第三坑</h4><p>新手用WordPress，需要应用别人已经搭建好的主题。我一开始像无头苍蝇一样到搜索引擎上像找ppt模板一样找主题，但是结果并不理想，搜到的网站的主题更新基本都停留在几年前。我下载了一个看起来不错的主题，但发现因为长久没有维护，主题安装之后不能正常显示主页，只好删掉重找。兜兜转转最后发现官网提供的主题就相对不错，可选择样式很多，可编辑性也很好。前面的时间又是白白搭进去了。</p>
+<h4 id="第四坑"><a href="#第四坑" class="headerlink" title="第四坑"></a>第四坑</h4><p>开始设置主题的时候，WordPress提示我要输入本机ftp账号和密码，但是我不知道在哪里可以找到这个账号。一通搜索之后，基本都讲要修改wp-config.php文件，但是没有一个人提到这个文件在哪……搜索本地没有，我反应过来应该在服务器上，但是服务器文件并没有搜索功能，我对着二三十个文件夹十分迷茫。最后还是回到当时的实验教程中，找到了WordPress当时的安装位置，最后找到了这个需要修改的php文件，解决了需要ftp账号的问题。</p>
+<p>复盘一圈下来，遇到的很多问题其实并不是真正的坑，是因为我习惯自己冲上去摸索，摸索不透就上谷歌，实在没办法了再求助其实就在手边的技术文档和官方支持，最后在一些莫名其妙的地方浪费了时间。如果再来一次，或者有其他的项目，我想我还是会参考一通教程之后按自己的想法折腾，但是重要的是要记得早点去参考官网和技术文档啦，不要把时间无谓地浪费掉。</p>
+<p>好啦，到这里小黑站就已经成型啦，再修修边边角角，慢慢积累文章就是了。下篇技术分享见！</p>
+
+            
+                
+    
+    
+        <div class="adsense_post_left">
+            
+    <ins class="adsbygoogle"
+         style="display:inline-block;width:160px;height:600px"
+         data-ad-client=""
+         data-ad-slot=""></ins>
+
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+        </div>
+        <div class="adsense_post_right">
+            
+    <ins class="adsbygoogle"
+         style="display:inline-block;width:160px;height:600px"
+         data-ad-client=""
+         data-ad-slot=""></ins>
+
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+        </div>
+        <p class="adsense_tb_horizontal">
+            
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client=""
+         data-ad-slot=""></ins>
+
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+        </p>
+    
+
+
+            
+        </div>
+        <div class="post-tool">
+            <a class="btn-thumbs-up" href="javascript:void(0);" target="_blank" rel="noopener" data-cid="52" title="95">
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i> Donate
+            </a>
+        </div>
+        
+        <div class="post-tags">Tags：
+            
+        </div>
+        
+    </article>
+    
+        <p style="text-align: center">This article just represents my own viewpoint. If there is something wrong, please correct me.</p>
+    
+    
+    
+
+</div>
+<script src="/js/busuanzi.pure.mini.js"></script>
+
+
+        </div><!-- end #main-->
+    </div><!-- end #body -->
+    <footer class="footer">
+    <div class="footer-inner" style="text-align: center">
+        <p>
+            <a href="/about"  title="About">About</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
+            <!-- 自定义链接 -->
+            <a href="/help" title="Help" >Help</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
+            <a href="/links" title="Links">Links</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
+            <a href="/sitemap.xml" title="SiteMap">SiteMap</a>
+        </p>
+        <p>
+            Has been established&nbsp<a href="/timeline" id="siteBuildingTime"></a>&nbspDays，<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="licence">Based on Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</a><br/>
+            ©2017-<span id="cpYear"></span> Based on&nbsp<a href="http://hexo.io" target="_blank" rel="nofollow">Hexo</a>
+            ，Theme by&nbsp&nbsp<a href="https://github.com/tangkunyin/hexo-theme-jsimple" target="_blank" rel="bookmark">JSimple</a>
+            ，Author&nbsp<a href="http://www.bingxinwu.com" target="_blank" rel="friend">Bingxin</a>
+            ，Hosted by <a href="https://pages.github.com/" target="_blank" rel="nofollow">GitHub Pages</a>
+        </p>
+    </div>
+</footer>
+<script src="/js/SimpleCore.js"></script>
+
+</div>
+<!-- search pop -->
+<div class="popup search-popup local-search-popup">
+    <div class="local-search-header clearfix">
+        <span class="search-icon">
+            <i class="fa fa-search"></i>
+        </span>
+        <span class="popup-btn-close">
+            <i class="fa fa-times-circle"></i>
+        </span>
+        <div class="local-search-input-wrapper">
+            <input id="local-search-input"
+                   spellcheck="false"
+                   type="text"
+                   autocomplete="off"
+                   placeholder="Input query keywords here..."/>
+        </div>
+    </div>
+    <div id="local-search-result"></div>
+</div>
+<div class="fixed-btn">
+    <a class="btn-gotop" href="javascript:" target="_blank" rel="noopener"> <i class="fa fa-angle-up"></i></a>
+</div>
+<script>
+    $(function () {
+        var jsi_config = {
+            buildingTime: '11/20/2019',
+            current: $('.post-tags').length > 0 ? 'post' : 'archive',
+            snsQRCode: '/images/sns-qrcode.png',
+            donateImg: '/images/donate-qr.png',
+            localSearch: { dbPath: '' },
+            readMode: 'day'
+        };
+        
+        SimpleCore.init(jsi_config);
+        
+    });
+</script>
+</body>
+</html>
